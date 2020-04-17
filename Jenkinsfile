@@ -1,14 +1,15 @@
-node {
+pipeline {
+	agent any
+	stages{
 	stage 'Checkout'
-		checkout scm
-
+		echo 'checkout scm'
 	stage 'Backup'
-		hello backup
+		echo 'hello backu'p
 	stage 'Build'
-	  hello demo
-  stage 'Check Build'
-  hello check build
-  stage 'Create Transport Form'
-   create transport form 
- 
+	 echo 'hello demo'
+        stage 'Check Build'
+         echo 'hello check build'
+        stage 'Create Transport Form'
+         echo 'create transport form'
+	}
   }

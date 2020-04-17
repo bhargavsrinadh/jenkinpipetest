@@ -1,25 +1,25 @@
 pipeline {
 	agent any
 	stages{
-	stage 'Checkout'
+	stage ('Checkout')
 		steps{
 		echo 'checkout scm'
 		}
-	stage 'Backup'
+	stage ('Backup')
 		steps{
 		echo 'hello backup'
 		}
-	stage 'Build'
+	stage ('Build')
 		steps{
 	 echo 'hello demo'
 		}
-        stage 'Check Build'
+        stage ('Check Build')
 		steps{
          echo 'hello check build'
 		}
-        stage 'Create Transport Form'
+        stage ('Create Transport Form')
 		steps{
-         echo 'create transport form'
+         input ('create transport form?')
 		}
 	}
   }

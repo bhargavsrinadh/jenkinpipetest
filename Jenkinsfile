@@ -5,7 +5,7 @@ node {
 	stage 'Backup'
 		hello backup
 	stage 'Build'
-	  hello Build
+	  hello demo
   stage 'Check Build'
   hello check build
   stage 'Create Transport Form'

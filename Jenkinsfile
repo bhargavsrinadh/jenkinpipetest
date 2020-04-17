@@ -23,7 +23,7 @@ pipeline {
 		}
 		stage('Create Transport Form') {
 		steps{
-         input('create transport form?')
+         echo 'create transport form?'
 		}
 		}
 	}
